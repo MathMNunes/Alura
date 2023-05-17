@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+	
+    var tabuada = parseInt(prompt("Qual tabuada deseja saber:"));
+    for(var multiplicador = 1; multiplicador <=10;multiplicador++){
+        mostra("Valor da multiplicação: " + tabuada * multiplicador);
+    }
+
+    mostra("Fim");
+
+	
+</script>

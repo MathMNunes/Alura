@@ -14,14 +14,18 @@
 		document.write(frase);
 		pulaLinha();
 	}
-	var chute = parseInt(prompt("Digite seu chute:"));
-    var numeroPensado = Math.round(Math.random() * 10);
+	var numeroPensado = Math.round(Math.random() * 10);
 
+	var tentativas = 1;
+	while(tentativas <=3){
+	var chute = parseInt(prompt("Digite seu chute:"));
     if (chute == numeroPensado){
         mostra("Voce acertou!!");
+		break;
     } else {
-        mostra("Voce errou, o numero pensado é " + numeroPensado);
+        mostra("Voce errou");
     }
-
-	
+	tentativas++;
+	}
+	mostra("Fim");
 </script>
